@@ -28,7 +28,7 @@ const Lyrics = () => {
     }, [id]);
 
     if (loading) {
-        return <Spinner />;
+        return <h1>Loading</h1>
     } else {
         return (
             <>
