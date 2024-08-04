@@ -1,7 +1,7 @@
 import React from 'react'
 import TrackContextProvider from './Context/Context'
 import Home from './Components/Home'
-import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom'
+import { BrowserRouter as Route, Routes } from 'react-router-dom'
 import NavBar from './Components/NavBar'
 import Lyrics from './Components/Lyrics'
 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
-import Spinner from "./Spinner";
 
 const Lyrics = () => {
     const { id } = useParams();

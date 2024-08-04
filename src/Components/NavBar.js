@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { TrackContext } from '../Context/Context'
 
 const NavBar = () => {
   // const [,,search,] = useContext(TrackContext);
