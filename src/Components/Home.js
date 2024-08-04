@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     if(search === true){console.log("1");console.log(search);setSearch(false);console.log(search);}
-  },[])
+  },[search , setSearch])
 
   return (
     <React.Fragment>

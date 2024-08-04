@@ -4,7 +4,7 @@ import axios from "axios";
 import img1 from "../lirix_banner1.png";
 
 const Search = () => {
-    const [state, setState, search, setSearch] = useContext(TrackContext);
+    const [, setState, , setSearch] = useContext(TrackContext);
     const [userInput, setUserInput] = useState("");
     const [trackTitle, setTrackTitle] = useState("");
 
@@ -17,7 +17,7 @@ const Search = () => {
                 })
                 .catch(err => console.log(err));
         }
-    }, [trackTitle]);
+    }, [trackTitle,setState]);
 
     const findTrack = (e) => {
         e.preventDefault();
@@ -31,7 +31,7 @@ const Search = () => {
 
     return (
         <div className="flex justify-around bg-black">
-            <img src={img1} className="w-2/5" />
+            <img src={img1} alt="Lyrics" className="w-2/5" />
             <div className="flex justify-start items-center flex-col min-h-80 px-32 mx-16 text-white">
                 <h1 className="pt-8 pb-16 text-3xl text-center">
                     <span>Search For A Song</span>
